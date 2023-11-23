@@ -6,7 +6,7 @@ This Python script visualizes the flow of block option trades on Deribit for BTC
 1. Initialization: Create an instance of the HeatMap class.
 
 ``` python
-from heatmap import HeatMap
+from option_flows import HeatMap
 heatmap = HeatMap(asset='BTC', lookback_hours=24)
 ```
 - **asset**: The cryptocurrency asset, either 'BTC' or 'ETH'.
