@@ -12,15 +12,11 @@ heatmap = HeatMap(asset='BTC', lookback_hours=24)
 - **asset**: The cryptocurrency asset, either 'BTC' or 'ETH'.
 - **lookback_hours**: The number of hours to look back for trades.
 
-2. Fetching and Cleaning Data: The class automatically fetches and processes the trade data when generating the heatmap.
-
-3. Generating the Heatmap:
+2. Generating the Heatmap:
 ```python
 heatmap.plot_data()
 ```
-This method fetches the data, cleans it, and plots the heatmap. The heatmap shows option trade flows with maturity dates on the y-axis and strike prices on the x-axis.
-
-4. Result: The script saves a heatmap image visualizing the trade flows during the specified lookback period.
+This method fetches the data, cleans it, and plots the heatmap. The heatmap shows option trade flows with maturity dates on the y-axis and strike prices on the x-axis. The blue vertical line represents the strike closest to the current price of the asset. Lastly, the script saves a heatmap image visualizing the trade flows during the specified lookback period.
 
 ## Examples
 **Example 1**: Bitcoin 24-Hour Trade Flow
@@ -28,15 +24,15 @@ This method fetches the data, cleans it, and plots the heatmap. The heatmap show
 btc_heatmap = HeatMap(asset='BTC', lookback_hours=24)
 btc_heatmap.plot_data()
 ```
-Generates and saves a heatmap for Bitcoin option trades over the past 24 hours.
+Generates and saves a heatmap for Bitcoin option block trades over the past 24 hours.
 ![](img/btc.png)
 
 **Example 2**: Ethereum 48-Hour Trade Flow
 ```python
-eth_heatmap = HeatMap(asset='ETH', lookback_hours=48)
+eth_heatmap = HeatMap(asset='ETH', lookback_hours=12)
 eth_heatmap.plot_data()
 ```
-Generates and saves a heatmap for Ethereum option trades over the past 48 hours.
+Generates and saves a heatmap for Ethereum option block trades over the past 12 hours.
 ![](img/eth.png)
 
 
