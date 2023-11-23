@@ -22,8 +22,6 @@ This method fetches the data, cleans it, and plots the heatmap. The heatmap show
 
 4. Result: The script saves a heatmap image visualizing the trade flows during the specified lookback period.
 
-INSERT PHOTO HERE...
-
 ## Examples
 **Example 1**: Bitcoin 24-Hour Trade Flow
 ``` python
@@ -31,8 +29,7 @@ btc_heatmap = HeatMap(asset='BTC', lookback_hours=24)
 btc_heatmap.plot_data()
 ```
 Generates and saves a heatmap for Bitcoin option trades over the past 24 hours.
-
-INSERT PHOTO HERE...
+![](img/btc.png)
 
 **Example 2**: Ethereum 48-Hour Trade Flow
 ```python
@@ -40,8 +37,7 @@ eth_heatmap = HeatMap(asset='ETH', lookback_hours=48)
 eth_heatmap.plot_data()
 ```
 Generates and saves a heatmap for Ethereum option trades over the past 48 hours.
-
-INSERT PHOTO HERE...
+![](img/eth.png)
 
 ## Conclusion
 This script provides an insightful visualization of the block option trades on Deribit for BTC and ETH, aiding in the analysis of market trends and trader behavior.
