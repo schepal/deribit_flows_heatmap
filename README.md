@@ -39,6 +39,15 @@ eth_heatmap.plot_data()
 Generates and saves a heatmap for Ethereum option trades over the past 48 hours.
 ![](img/eth.png)
 
+
+## Dependencies
+
+To use the `HeatMap` class, ensure you have the following Python libraries installed. You can install all required dependencies via `pip` with this command:
+
+```bash
+pip install pandas numpy requests matplotlib seaborn
+```
+
 ## Conclusion
 This script provides an insightful visualization of the block option trades on Deribit for BTC and ETH, aiding in the analysis of market trends and trader behavior.
 
